@@ -8,7 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/common-middle" />
+            <option value="$PROJECT_DIR$/middle.common" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
