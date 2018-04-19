@@ -1,11 +1,10 @@
 
 # Zhor
- [![Download](https://api.bintray.com/packages/meituan/maven/com.meituan.robust%3Apatch/images/download.svg?version=0.0.1) ](https://jitpack.io/#DemoMath/Zhor/-SNAPSHOT)
  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/DemoMath/Zhor)  
 
 [English](README.md) | [中文](README-zh.md) 
 
-<center>![License](image/zhor.png)</center>
+![License](https://github.com/DemoMath/Zhor/blob/master/image/zhor.png)
 
 ### Introduction
 Recently, I wanted to write an architectural case about a large Android project. By the way, I would like to make a record. Based on the componentization of routing, the maven library USES the jitpack, which is still to be continued.

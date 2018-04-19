@@ -1,11 +1,10 @@
 
 # Zhor
- [![Download](https://api.bintray.com/packages/meituan/maven/com.meituan.robust%3Apatch/images/download.svg?version=0.0.1) ](https://jitpack.io/#DemoMath/Zhor/-SNAPSHOT)
  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/DemoMath/Zhor)  
 
 [English](README-en.md) | [中文](README.md) 
 
-<center>![License](image/zhor.png)</center>
+![License](https://github.com/DemoMath/Zhor/blob/master/image/zhor.png)
 
 ### 项目简介
 近期想写一个关于Android大型项目的架构案例，顺便做一下记录，基于路由的组件化，maven库使用jitpack，未完待续
