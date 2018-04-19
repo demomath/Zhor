@@ -9,10 +9,10 @@ def develop_version_suffix = ".develop.version";
 def test_version_suffix = ".test.version";
 
 def snapshot = "mavenEnviFlag"
+
 /**
- * 加载配置文件
- * jiangjiawen
- * @return
+ * 推送maven库
+ * wudi
  */
 uploadArchives {
     repositories {
