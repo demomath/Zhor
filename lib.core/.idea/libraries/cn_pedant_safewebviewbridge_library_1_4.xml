@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="cn.pedant.safewebviewbridge:library-1.4">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib.core/build/intermediates/exploded-aar/cn.pedant.safewebviewbridge/library/1.4/res" />
+      <root url="jar://$PROJECT_DIR$/lib.core/build/intermediates/exploded-aar/cn.pedant.safewebviewbridge/library/1.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.pedant.safewebviewbridge/library/1.4/92b90da114dbcdca2f0be956b4a4858cc8c64f63/library-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
