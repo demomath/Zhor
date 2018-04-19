@@ -42,27 +42,8 @@ apt {
     }
 }
 
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:25.4.0'
-    compile 'com.trello:rxlifecycle:0.7.0'
-    compile 'com.trello:rxlifecycle-components:0.7.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-    compile 'com.squareup.okhttp3:okhttp:3.4.1'
-    provided 'com.squareup.okhttp3:okhttp-ws:3.4.1'
-    compile 'com.nineoldandroids:library:2.4.0'
-    compile 'org.greenrobot:eventbus:3.0.0'
-    apt 'org.greenrobot:eventbus-annotation-processor:3.0.1'
-    compile 'com.android.support:recyclerview-v7:25.4.0'
-    compile 'com.jakewharton:butterknife:8.4.0'
-    compile 'com.chanven.lib:cptr:1.1.0'
-    apt 'com.jakewharton:butterknife-compiler:8.4.0'
-    compile 'com.koushikdutta.async:androidasync:2.2.1'
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'cn.pedant.safewebviewbridge:library:1.4'
-    compile 'com.j256.ormlite:ormlite-android:5.0'
-    compile 'com.j256.ormlite:ormlite-core:5.0'
-    compile 'com.meituan.robust:robust:0.4.5'
-    compile 'com.orhanobut:logger:2.1.1'
 }
