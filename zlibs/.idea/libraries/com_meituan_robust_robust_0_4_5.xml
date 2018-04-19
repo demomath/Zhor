@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.meituan.robust:robust-0.4.5">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib.core/build/intermediates/exploded-aar/com.meituan.robust/robust/0.4.5/res" />
+      <root url="jar://$PROJECT_DIR$/lib.core/build/intermediates/exploded-aar/com.meituan.robust/robust/0.4.5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.meituan.robust/robust/0.4.5/2ab66bdf0199f1643fafec63ff1c9ad428b7e414/robust-0.4.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
