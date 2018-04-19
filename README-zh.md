@@ -5,7 +5,7 @@
 
 [English](README-en.md) | [中文](README.md) 
 
-<center>![License](http://p7ew0tvvv.bkt.clouddn.com/zhor.png)</center>
+<center>![License](image/zhor.png)</center>
 
 ### 项目简介
 近期想写一个关于Android大型项目的架构案例，顺便做一下记录，基于路由的组件化，maven库使用jitpack，未完待续
