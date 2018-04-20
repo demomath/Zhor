@@ -9,6 +9,9 @@
 ### 项目简介
 近期想写一个关于Android大型项目的架构案例，顺便做一下记录，基于路由的组件化，maven库使用jitpack，未完待续
 
+### 结构目录
+![License](https://github.com/DemoMath/Zhor/blob/master/image/structure.png)
+
 ### License
 
     Copyright 2018 demomath

@@ -9,6 +9,10 @@
 ### Introduction
 Recently, I wanted to write an architectural case about a large Android project. By the way, I would like to make a record. Based on the componentization of routing, the maven library USES the jitpack, which is still to be continued.
 
+
+### Structure
+![License](https://github.com/DemoMath/Zhor/blob/master/image/structure.png)
+
 ### License
 
     Copyright 2018 demomath
