@@ -9,6 +9,11 @@
 ### 项目简介
 近期想写一个关于Android大型项目的架构案例，顺便做一下记录，基于路由的组件化，maven库使用jitpack，未完待续
 
+### Maven库构建
+本项目通过[Nexus](https://www.sonatype.com/nexus-repository-sonatype)构建本地maven仓库用以使用，实际应用中可在服务器配置自己的maven仓库
+
+![License](https://github.com/DemoMath/Zhor/blob/master/image/maven-demo.png)
+
 ### 结构目录
 ![License](https://github.com/DemoMath/Zhor/blob/master/image/structure.png)
 
