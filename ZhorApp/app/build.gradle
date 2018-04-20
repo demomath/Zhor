@@ -38,5 +38,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation 'abc.thor:middle.common:1.0.0-SNAPSHOT'
+    implementation "abc.thor:middle.common:${gradle.versionName}-SNAPSHOT"
+    implementation "abc.thor:app.module1:${gradle.versionName}-SNAPSHOT"
+    implementation "abc.thor:app.module2:${gradle.versionName}-SNAPSHOT"
+    implementation "abc.thor:app.module3:${gradle.versionName}-SNAPSHOT"
+    implementation "abc.thor:app.module4:${gradle.versionName}-SNAPSHOT"
 }
