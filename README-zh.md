@@ -2,7 +2,7 @@
 # Zhor
  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/DemoMath/Zhor)  
 
-[English](README.md) | [中文](README.md) 
+[English](https://github.com/DemoMath/Zhor) | [中文](README-zh.md) 
 
 ![License](https://github.com/DemoMath/Zhor/blob/master/image/zhor.png)
 
