@@ -1,12 +1,12 @@
 apply plugin: "maven"
 
-def release_url_suffix = ".release.url";
-def develop_url_suffix = ".develop.url";
-def test_url_suffix = ".test.url";
+def release_url_suffix = ".release.url"
+def develop_url_suffix = ".develop.url"
+def test_url_suffix = ".test.url"
 
-def release_version_suffix = ".release.version";
-def develop_version_suffix = ".develop.version";
-def test_version_suffix = ".test.version";
+def release_version_suffix = ".release.version"
+def develop_version_suffix = ".develop.version"
+def test_version_suffix = ".test.version"
 
 def snapshot = "mavenEnviFlag"
 

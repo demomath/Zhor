@@ -1,12 +1,12 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply from: project.rootProject.getProjectDir().absolutePath + "/maven-publish.gradle"
 
+
 android {
-    compileSdkVersion 27
+    compileSdkVersion 26
     defaultConfig {
-        applicationId "com.abc.app"
         minSdkVersion 18
-        targetSdkVersion 27
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -21,10 +21,10 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    compile "www.abc:common:${gradle.versionName}-SNAPSHOT"
+    compile "www.abc:core:${gradle.versionName}-SNAPSHOT"
 }
