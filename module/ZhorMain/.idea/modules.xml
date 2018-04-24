@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ZhorMain.iml" filepath="$PROJECT_DIR$/ZhorMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhor_main/app.iml" filepath="$PROJECT_DIR$/zhor_main/app.iml" />
+    </modules>
+  </component>
+</project>
