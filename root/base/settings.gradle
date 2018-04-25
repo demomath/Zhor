@@ -1,2 +1,2 @@
 apply from:"./loadConfig.gradle" //加载配置
-include ':core'
+include ':root_base'

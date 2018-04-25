@@ -1,10 +1,14 @@
-apply plugin: 'com.android.application'
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
 apply from: project.rootProject.getProjectDir().absolutePath + "/maven-publish.gradle"
+
 
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.abc.app"
         minSdkVersion 18
         targetSdkVersion 27
         versionCode 1
@@ -19,17 +23,25 @@ android {
     }
 
     configurations.all {
-        resolutionStrategy.cacheChangingModulesFor 30, 'seconds'
+        resolutionStrategy.cacheChangingModulesFor 1, 'seconds'
     }
 
-//    sourceSets {
-//        main {
-//            manifest.srcFile 'src/main/AndroidManifest.xml'
-//            java.srcDir 'src/debug/java/'
-//            res.srcDirs=['src/debug/res']
-//        }
-//    }
+
+    sourceSets {
+        main {
+            if (isModule.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                //release模式下排除debug文件夹中的所有Java文件
+                java {
+                    exclude 'debug/**'
+                }
+            }
+        }
+    }
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -39,6 +51,4 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation "www.abc:middle_common:${gradle.versionName}-SNAPSHOT"
-    implementation "www.abc:zhor_main:${gradle.versionName}-SNAPSHOT"
-    implementation "www.abc:zhor_home:${gradle.versionName}-SNAPSHOT"
 }
