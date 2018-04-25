@@ -14,5 +14,14 @@ def loadProjectConfig(){
     //rootProject.gradle.ext 因为gradle对象先于project对象实例化，
     // 所以不能在project创建之前使用rootProject.gradle
     gradle.ext.versionName = config.get("versionName")
+
+
+
+    gradle.ext.minifyEnabled = config.get("minifyEnabled");
+    gradle.ext.shrinkResources = config.get("shrinkResources");
+    gradle.ext.zipAlignEnabled = config.get("zipAlignEnabled");
+    gradle.ext.registLib = config.get("registLib")
+    gradle.ext.registModule = config.get("registModule")
+
     print("Gradle Environment completes")
 }

@@ -23,7 +23,7 @@ android {
     }
 
     configurations.all {
-        resolutionStrategy.cacheChangingModulesFor 1, 'seconds'
+        resolutionStrategy.cacheChangingModulesFor 10, 'seconds'
     }
 
 

@@ -4,7 +4,7 @@
     package="com.abc.thor_home">
     <application>
         <activity
-            android:name=".HomeActivity"
+            android:name=".ZhorHomeActivity"
             android:screenOrientation="portrait">
         </activity>
     </application>

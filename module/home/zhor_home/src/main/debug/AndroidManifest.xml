@@ -7,7 +7,7 @@
         android:icon="@mipmap/zhor_home_icon_launcher"
         android:label="@string/zhor_home_s_app_name"
         android:theme="@style/ZhorHomeTheme">
-        <activity android:name=".HomeActivity"
+        <activity android:name=".ZhorHomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
