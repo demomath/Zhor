@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="www.abc:root_base-1.0.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/root_base-1.0.0-SNAPSHOT.aar/eaec50739edea8f73558aafb68de6322/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/root_base-1.0.0-SNAPSHOT.aar/eaec50739edea8f73558aafb68de6322/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/root_base-1.0.0-SNAPSHOT.aar/5eb11122fc1afb0ac7e7c34db3f26cc6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/root_base-1.0.0-SNAPSHOT.aar/5eb11122fc1afb0ac7e7c34db3f26cc6/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

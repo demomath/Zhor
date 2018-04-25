@@ -53,6 +53,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation "www.abc:middle_common:${gradle.versionName}-SNAPSHOT"
-    implementation "www.abc:zhor_main:${gradle.versionName}-SNAPSHOT"
+    implementation "www.abc:middle_router:${gradle.versionName}-SNAPSHOT"
     implementation "www.abc:zhor_home:${gradle.versionName}-SNAPSHOT"
+    implementation "www.abc:zhor_main:${gradle.versionName}-SNAPSHOT"
 }

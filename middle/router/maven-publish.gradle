@@ -1,0 +1,57 @@
+apply plugin: "maven"
+
+def release_url_suffix = ".release.url"
+def develop_url_suffix = ".develop.url"
+def test_url_suffix = ".test.url"
+
+def release_version_suffix = ".release.version"
+def develop_version_suffix = ".develop.version"
+def test_version_suffix = ".test.version"
+
+def snapshot = "mavenEnviFlag"
+
+/**
+ * 推送maven库
+ * wudi
+ */
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            def pro = rootProject.properties
+            def username = pro.get("maven.username")
+            def pwd = pro.get("maven.password")
+            def name = project.name
+            Integer isSnapshot = Integer.parseInt(pro.get(snapshot))
+
+            String versionName
+            def nexusRepositoryUrl
+
+            if (1 == isSnapshot) {
+                versionName = pro.get(name.concat(release_version_suffix))
+                nexusRepositoryUrl = pro.get(name.concat(release_url_suffix))
+            } else if(2 == isSnapshot){
+                versionName = pro.get(name.concat(test_version_suffix))
+                nexusRepositoryUrl = pro.get(name.concat(test_url_suffix))
+            } else {
+                versionName = pro.get(name.concat(develop_version_suffix))
+                nexusRepositoryUrl = pro.get(name.concat(develop_url_suffix))
+            }
+
+
+            repository(url: nexusRepositoryUrl) {
+                authentication(userName: username, password: pwd)
+            }
+
+            pom.project {
+                artifactId name
+                def manifestFile = android.sourceSets.main.manifest.srcFile
+                String packageName = 'www.abc'
+                version versionName.concat("-SNAPSHOT")
+                groupId "www.abc"
+                packaging 'aar'
+                description 'dependences lib'
+            }
+        }
+    }
+}
+

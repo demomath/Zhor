@@ -12,7 +12,7 @@
         android:theme="@style/ZhorAppTheme"
         tools:replace="android:icon,android:label,android:roundIcon,android:supportsRtl,android:theme,android:allowBackup">
         <activity android:name=".ZhorActivity"
-            android:screenOrientation="portrait">
+            android:theme="@style/ZhorAppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
