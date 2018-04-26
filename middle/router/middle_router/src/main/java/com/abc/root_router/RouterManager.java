@@ -22,7 +22,6 @@ import dalvik.system.DexFile;
  * Created by wudi on 2018/4/25.
  * 路由控制
  */
-
 public class RouterManager implements IRouter {
 
     private volatile static RouterManager sRouterManager;
@@ -67,6 +66,7 @@ public class RouterManager implements IRouter {
                             continue;
                         }
                         String uriStr = scheme+"://"+host+path;
+                        LogUtil.e(uriStr,null);
                         this.mSet.add(Uri.parse(uriStr));
                     }
                 }

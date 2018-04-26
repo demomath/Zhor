@@ -1,6 +1,5 @@
 package com.abc.root_router.annotation;
 
-import android.app.Activity;
 import android.support.annotation.NonNull;
 
 import com.abc.root_router.common.RouterConstant;
@@ -20,6 +19,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME) //运行时保留，运行中可以处理
 @Documented  //生成javadoc文件
 public @interface RouterAction {
+
     String from() default RouterConstant.DEFAULT_FROM;
     String scheme() default RouterConstant.DEFAULT_SCHEME;
     String host() default RouterConstant.DEFAULT_HOST;

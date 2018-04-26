@@ -2,6 +2,7 @@ package com.abc.zhorapp;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -11,7 +12,7 @@ import com.abc.root_router.RouterManager;
  * Created by wudi on 2018/4/25.
  */
 
-public class ZhorActivity extends Activity {
+public class ZhorActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

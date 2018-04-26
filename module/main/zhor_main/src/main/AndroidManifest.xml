@@ -5,6 +5,7 @@
 
     <application>
         <activity android:name=".ZhorMainActivity"
+            android:theme="@style/ZhorMainAppTheme"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

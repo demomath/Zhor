@@ -11,8 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/ZhorAppTheme"
         tools:replace="android:icon,android:label,android:roundIcon,android:supportsRtl,android:theme,android:allowBackup">
-        <activity android:name=".ZhorActivity"
-            android:theme="@style/ZhorAppTheme">
+        <activity android:name=".ZhorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
