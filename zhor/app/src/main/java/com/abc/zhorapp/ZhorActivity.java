@@ -24,6 +24,12 @@ public class ZhorActivity extends AppCompatActivity {
                 RouterManager.getInstance().startActivity(ZhorActivity.this,"/ZhorMainActivity");
             }
         });
+        findViewById(R.id.btn_tools).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RouterManager.getInstance().startActivity(ZhorActivity.this,"/ToolDemoActivity");
+            }
+        });
         Toast.makeText(this,"zhor",Toast.LENGTH_SHORT).show();
     }
 }
