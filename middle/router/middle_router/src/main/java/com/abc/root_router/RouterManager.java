@@ -1,32 +1,27 @@
 package com.abc.root_router;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 
-import com.abc.core.utils.LogUtil;
+import com.abc.base.rxtools.RxLogTool;
 import com.abc.root_router.annotation.RouterAction;
-import com.abc.root_router.exception.PathNullException;
-import com.abc.root_router.interf.IRouter;
 
+import java.util.ArrayList;
 import java.util.Enumeration;
-import java.util.HashSet;
+import java.util.List;
 
 import dalvik.system.DexFile;
 
 /**
  * Created by wudi on 2018/4/25.
- * 路由控制
+ * 路由控制，维护uri的list
  */
-public class RouterManager implements IRouter {
+public class RouterManager {
 
     private volatile static RouterManager sRouterManager;
 
-    private HashSet<Uri> mSet = new HashSet();
+    private ArrayList<Uri> mList = new ArrayList<>();
 
     private RouterManager() {}
 
@@ -41,7 +36,7 @@ public class RouterManager implements IRouter {
         return sRouterManager;
     }
 
-    public void initActivitySet (Context context) {
+    public List<Uri> init (Context context) {
         try {
             //通过资源路径获得DexFile
             DexFile e = new DexFile(context.getPackageResourcePath());
@@ -62,76 +57,23 @@ public class RouterManager implements IRouter {
                         String host = action.host();
                         String path = action.path();
                         if (TextUtils.isEmpty(path)) {
-                            LogUtil.e(entryName+"don't has path",new PathNullException());
+                            RxLogTool.e(entryName+"don't has path");
                             continue;
                         }
                         String uriStr = scheme+"://"+host+path;
-                        LogUtil.e(uriStr,null);
-                        this.mSet.add(Uri.parse(uriStr));
+                        RxLogTool.e(uriStr);
+                        this.mList.add(Uri.parse(uriStr));
                     }
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return mList;
     }
 
-    @Override
-    public void startActivity(@NonNull Context context,@NonNull String path) {
-        for (Uri uri : mSet) {
-            if ( uri != null && uri.getPath().equals(path)) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                context.startActivity(intent);
-                break;
-            }
-        }
-    }
-
-    @Override
-    public void startActivity(@NonNull Context context,@NonNull String path, Bundle bundle) {
-        for (Uri uri : mSet) {
-            if ( uri != null && uri.getPath().equals(path)) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                context.startActivity(intent,bundle);
-                break;
-            }
-        }
-    }
-
-    @Override
-    public void startActivityForResult(@NonNull Context context, @NonNull String path,int requestCode) {
-        Activity activity;
-        try {
-            activity = (Activity) context;
-        } catch (Exception e) {
-            LogUtil.e("param context should be activity's context",e);
-            return;
-        }
-        for (Uri uri : mSet) {
-            if ( uri != null && uri.getPath().equals(path)) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                activity.startActivityForResult(intent,requestCode);
-                break;
-            }
-        }
-    }
-
-    @Override
-    public void startActivityForResult(@NonNull Context context, @NonNull String path,int requestCode,Bundle bundle) {
-        Activity activity;
-        try {
-            activity = (Activity) context;
-        } catch (Exception e) {
-            LogUtil.e("param context should be activity's context",e);
-            return;
-        }
-        for (Uri uri : mSet) {
-            if ( uri != null && uri.getPath().equals(path)) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                activity.startActivityForResult(intent,requestCode,bundle);
-                break;
-            }
-        }
+    ArrayList<Uri> getList() {
+        return mList;
     }
 
 }

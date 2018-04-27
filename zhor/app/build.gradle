@@ -12,10 +12,6 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
-//        release {
-//            minifyEnabled false
-//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-//        }
         release {
             minifyEnabled java.lang.Boolean.parseBoolean(gradle.minifyEnabled)
             shrinkResources java.lang.Boolean.parseBoolean(gradle.shrinkResources)
@@ -37,13 +33,6 @@ android {
         resolutionStrategy.cacheChangingModulesFor 10, 'seconds'
     }
 
-//    sourceSets {
-//        main {
-//            manifest.srcFile 'src/main/AndroidManifest.xml'
-//            java.srcDir 'src/debug/java/'
-//            res.srcDirs=['src/debug/res']
-//        }
-//    }
 }
 
 dependencies {
@@ -54,7 +43,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    implementation "www.abc:middle_common:${gradle.versionName}-SNAPSHOT"
     implementation "www.abc:zhor_home:${gradle.versionName}-SNAPSHOT"
     implementation "www.abc:zhor_main:${gradle.versionName}-SNAPSHOT"
+
 }
