@@ -25,11 +25,11 @@ public class Router implements IRouter{
     private volatile static Router sIntance;
     private String mPath;
     private Uri mUri;
-    private int mRequestCode = 0;
+    private int mRequestCode;
     private Bundle mBundle;
-    private int mFlag = 0;
-    private @AnimatorRes int mEnter;
-    private @AnimatorRes int mExit;
+    private int mFlag;
+    private @AnimatorRes int mEnter = -1;
+    private @AnimatorRes int mExit = -1;
 
     // TODO: 2018/4/27 未用到回调
     private RouterCallBack mCallBack;
@@ -88,7 +88,7 @@ public class Router implements IRouter{
         Intent intent = new Intent(Intent.ACTION_VIEW, sIntance.mUri);
         intent.setFlags(sIntance.mFlag);
         context.startActivityForResult(intent, sIntance.mRequestCode, sIntance.mBundle);
-        if (sIntance.mEnter == 0 || sIntance.mExit == 0) {
+        if (sIntance.mEnter == -1 || sIntance.mExit == -1) {
             reset();
             return;
         }

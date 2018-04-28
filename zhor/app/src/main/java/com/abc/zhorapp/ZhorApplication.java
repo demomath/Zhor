@@ -1,6 +1,8 @@
 package com.abc.zhorapp;
 
 
+import com.abc.base.rxtools.RxLogTool;
+import com.abc.base.rxtools.view.RxToast;
 import com.abc.root_router.RouterManager;
 
 import android.app.Application;
@@ -18,6 +20,11 @@ public class ZhorApplication extends Application {
         super.onCreate();
 
         //初始化路由哈希集合
-        List<Uri> init = RouterManager.getInstance().init(this);
+        List<Uri> activityUriList = RouterManager.getInstance().init(this);
+        for (Uri uri : activityUriList) {
+            RxLogTool.e(uri.toString());
+        }
+
+
     }
 }

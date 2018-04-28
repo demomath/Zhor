@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="www.abc:core_base-1.0.0-SNAPSHOT">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/f7b88851be13b4b3d1f9142b721ddc72/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/f7b88851be13b4b3d1f9142b721ddc72/jars/libs/zxing_core_3.0.1.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/f7b88851be13b4b3d1f9142b721ddc72/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/f7b88851be13b4b3d1f9142b721ddc72/jars/libs/zip4j_1.3.2.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/f7b88851be13b4b3d1f9142b721ddc72/jars/libs/alipaySdk-20170309.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/87e924add64034045908445f81e1813a/jars/libs/zip4j_1.3.2.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/87e924add64034045908445f81e1813a/jars/libs/zxing_core_3.0.1.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/87e924add64034045908445f81e1813a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/87e924add64034045908445f81e1813a/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/core_base-1.0.0-SNAPSHOT.aar/87e924add64034045908445f81e1813a/jars/libs/alipaySdk-20170309.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
