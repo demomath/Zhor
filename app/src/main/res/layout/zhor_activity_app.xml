@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="zhormodel"
+            type="com.abc.zhor.model.ZhorAppModel" />
+
+        <variable
+            name="zhorvm"
+            type="com.abc.zhor.vm.ZhorAppVM" />
+
+        <import type="com.abc.zhor.R" />
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.ZhorAppActivity">
+
+        <Button
+            android:id="@+id/app_btn_go_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            bind:clickCommand="@{zhorvm.goMainView}"
+            bind:text="@{zhormodel.main}" />
+
+        <Button
+            android:id="@+id/app_btn_go_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            bind:clickCommand="@{zhorvm.goHomeView}"
+            bind:text="@{zhormodel.home}" />
+
+        <EditText
+            android:id="@+id/app_et_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</layout>

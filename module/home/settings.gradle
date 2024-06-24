@@ -1,2 +1,0 @@
-apply from:"./loadConfig.gradle" //加载配置
-include ':zhor_home'
